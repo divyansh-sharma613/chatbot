@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Assistant </title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+
+            <div class="brand">
+                <div class="brand-icon">🤖</div>
+
+                <div>
+                    <h2>AI Assistant</h2>
+                    
+                </div>
+            </div>
+
+            <button class="new-chat" onclick="location.reload()">
+                <span>＋</span>
+                New Chat
+            </button>
+
+            <div class="sidebar-section">
+                <p class="section-title">QUICK QUESTIONS</p>
+
+                <button class="quick-btn" onclick="quickMessage('What is Python?')">
+                    🐍 What is Python?
+                </button>
+
+                <button class="quick-btn" onclick="quickMessage('What is AI?')">
+                    🧠 What is AI?
+                </button>
+
+                <button class="quick-btn" onclick="quickMessage('What can you do?')">
+                    ✨ What can you do?
+                </button>
+
+                <button class="quick-btn" onclick="quickMessage('Tell me about internship')">
+                    💼 Internship
+                </button>
+            </div>
+
+            <div class="sidebar-bottom">
+                <div class="online">
+                    <span></span>
+                    System Online
+                </div>
+
+                <p>Rule-Based AI Chatbot</p>
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN CHAT -->
+        <main class="main">
+
+            <!-- TOP BAR -->
+            <header class="topbar">
+
+                <div class="mobile-brand">
+                    🤖
+                </div>
+
+                <div>
+                    <h1>AI Assistant</h1>
+
+                    <div class="online-text">
+                        <span></span>
+                        Online
+                    </div>
+                </div>
+
+                <div class="top-info">
+                    <span>Python</span>
+                    <span>Rule-Based AI</span>
+                </div>
+
+            </header>
+
+
+            <!-- CHAT AREA -->
+            <section id="chat-box" class="chat-box">
+
+                <!-- Welcome -->
+                <div class="welcome">
+
+                    <div class="welcome-icon">
+                        🤖
+                    </div>
+
+                    <h2>Hello! I'm your AI Assistant 👋</h2>
+
+                    <p>
+                        I'm a professional rule-based chatbot created
+                        using Python. Ask me something and I'll try
+                        my best to help.
+                    </p>
+
+                    <div class="suggestions">
+
+                        <button onclick="quickMessage('What is Python?')">
+                            🐍
+                            <div>
+                                <strong>Learn Python</strong>
+                                <small>What is Python?</small>
+                            </div>
+                        </button>
+
+                        <button onclick="quickMessage('What is AI?')">
+                            🧠
+                            <div>
+                                <strong>Artificial Intelligence</strong>
+                                <small>What is AI?</small>
+                            </div>
+                        </button>
+
+                        <button onclick="quickMessage('What can you do?')">
+                            ✨
+                            <div>
+                                <strong>Capabilities</strong>
+                                <small>What can you do?</small>
+                            </div>
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- TYPING -->
+            <div id="typing" class="typing">
+                <div class="typing-avatar">🤖</div>
+
+                <span>AI Assistant is thinking</span>
+
+                <div class="dots">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </div>
+            </div>
+
+
+            <!-- INPUT -->
+            <div class="input-wrapper">
+
+                <div class="input-box">
+
+                    <input
+                        type="text"
+                        id="user-input"
+                        placeholder="Message AI Assistant..."
+                        autocomplete="off"
+                    >
+
+                    <button id="send-btn" title="Send message">
+                        ➤
+                    </button>
+
+                </div>
+
+                <p class="disclaimer">
+                    Rule-based chatbot • CodSoft Artificial Intelligence Internship
+                </p>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
